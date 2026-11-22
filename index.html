@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <div class="container">
+    <header class="page-header">
+      <div>
+        <h1> student management</h1>
+        <p> manage your students and track their performance.</p>
+      </div>
+      <button id ="addStudentButton" class:"primary-btn">  Add Student</button>
+    </header>
+  <section class="stats-grid">
+    <div class="stats-card"> 
+      <h3>Total Students</h3>
+      <p id="studentCount">0</p>
+    </div>
+    <div class="stats-card">
+      <h3>Average Grade</h3>
+      <p id="averageGrade">0</p>
+    </div>
+  </section>  
+  <section class="students-section">
+    <div class="section-header">
+      <div>      
+        <h2> My students </h2>
+        <p>manage and monitor your students.</p>
+      </div>
+      <input type="text" id="searchStudent" placeholder="Search student...">
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr> 
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>  
+        <tbody id="studenttablebody">
+        </tbody>
+      </table>
+    </div> 
+    <form id="studentform">
+      <div class="form-header">
+        <div>
+          <h3>Add new student</h3>
+          <p>enter the student information below.</p>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group full-width">
+        <label for="studentname">Full Name</label>
+        <input type="text"  id="studentname" placeholder="Enter student's name">
+        </div>
+        <div class="form-group">
+            <label for="studentage">Age</label>
+            <input
+                type="number"
+                id="studentage"
+                placeholder="Enter age"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="studentgrade">Grade</label>
+            <input
+                type="number"
+                id="studentgrade"
+                placeholder="Enter grade"
+            >
+        </div>
+        <button type="submit" id="secondbutton" class:"primary-btn"> add student</button>
+    </form>
+    <script src="script.js"></script>
+   </div> 
+</body>
+</html>
